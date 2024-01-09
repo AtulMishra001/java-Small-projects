@@ -1,4 +1,5 @@
 import java.util.*;
+// if number is not starting with 0 
 public class palindromeNumber {
     public static void checkPalindrome(int num) {
         int reverseNum=0;
