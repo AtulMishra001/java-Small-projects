@@ -1,14 +1,17 @@
 import java.util.*;
 
-public class java_patterns {
+public class star_patterns {
     public static void rectangle() { // this function prints a simple solid rectangle
         Scanner sc = new Scanner(System.in);
-       
+        int rows ,columns;
         System.out.println("Enter the number of rows :)");
-        int rows = sc.nextInt();
+        rows = sc.nextInt();
+
+        System.out.println("Enter the number of columns :)");
+        columns = sc.nextInt();
 
         for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= rows; j++) {
+            for (int j = 1; j <= columns; j++) {
                 System.out.print("* ");
             }
             System.out.println();
@@ -39,13 +42,13 @@ public class java_patterns {
     }
 
     public static void tiltedHollowRectangle() { // this function prints tilted hollow rectangle
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.println("Enter the number of rows :)");
-        int rows = sc.nextInt();
+        int rows = input.nextInt();
 
         System.out.println("Enter the number of columns :)");
-        int columns = sc.nextInt();
+        int columns = input.nextInt();
 
         for (int i = 1; i <= rows; i++) {
 
@@ -64,10 +67,10 @@ public class java_patterns {
             }
             System.out.println();
         }
-
+        input.close();
     }
 
     public static void main(String[] args) {
-        tiltedHollowRectangle();
+       
     }
 }
